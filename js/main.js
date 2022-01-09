@@ -1,6 +1,8 @@
 'use strict';
 
-// Fase 3
+// Fase 4
+
+const getRandomNumber = (max) => Math.ceil(Math.random() * max);
 
 const writeThis = (word, times) => {
   for (let i = 0; i < times; i++) {
@@ -8,6 +10,6 @@ const writeThis = (word, times) => {
   }
 };
 
-writeThis('patata', 10);
-writeThis('aguacate', 7);
-writeThis('Pizza', 50);
+writeThis('patata', getRandomNumber(10));
+writeThis('aguacate', getRandomNumber(10));
+writeThis('Pizza', getRandomNumber(10));
