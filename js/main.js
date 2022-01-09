@@ -1,8 +1,25 @@
 'use strict';
 
-// Fase 4
+// Fase 5
 
-const getRandomNumber = (max) => Math.ceil(Math.random() * max);
+const myWordList = [
+  {
+    text: 'Pencil',
+    total: 6,
+  },
+  {
+    text: 'Thermo',
+    total: 2,
+  },
+  {
+    text: 'TV',
+    total: 8,
+  },
+  {
+    text: 'Phone',
+    total: 4,
+  },
+];
 
 const writeThis = (word, times) => {
   for (let i = 0; i < times; i++) {
@@ -10,6 +27,10 @@ const writeThis = (word, times) => {
   }
 };
 
-writeThis('patata', getRandomNumber(10));
-writeThis('aguacate', getRandomNumber(10));
-writeThis('Pizza', getRandomNumber(10));
+const writeMyArray = (array) => {
+  for (const item of array) {
+    writeThis(item.text, item.total);
+  }
+};
+
+writeMyArray(myWordList);
