@@ -1,6 +1,6 @@
 **[Mara Rocha Fernández](https://github.com/mararochafernandez)** ✨
 
-- Exercise URL: [Funciones y parámetros desde cero](#)
+- Exercise URL: [Funciones y parámetros desde cero](https://mararochafernandez.github.io/js-funciones-y-parametros-desde-cero/)
 
 ---
 
