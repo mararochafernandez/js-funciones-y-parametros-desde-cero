@@ -1,25 +1,9 @@
 'use strict';
 
-// Fase 5
+// Fase 6
 
-const myWordList = [
-  {
-    text: 'Pencil',
-    total: 6,
-  },
-  {
-    text: 'Thermo',
-    total: 2,
-  },
-  {
-    text: 'TV',
-    total: 8,
-  },
-  {
-    text: 'Phone',
-    total: 4,
-  },
-];
+const API_URL =
+  'https://beta.adalab.es/ejercicios-extra/js-funciones-y-parametros-desde-cero/data.json';
 
 const writeThis = (word, times) => {
   for (let i = 0; i < times; i++) {
@@ -33,4 +17,10 @@ const writeMyArray = (array) => {
   }
 };
 
-writeMyArray(myWordList);
+const getDataFromApi = () => {
+  fetch(API_URL)
+    .then((response) => response.json())
+    .then((data) => writeMyArray(data.results));
+};
+
+getDataFromApi();
