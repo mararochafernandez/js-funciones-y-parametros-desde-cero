@@ -1,9 +1,6 @@
 'use strict';
 
-// Fase 6
-
-const API_URL =
-  'https://beta.adalab.es/ejercicios-extra/js-funciones-y-parametros-desde-cero/data.json';
+const API_URL = './api/data.json';
 
 const writeThis = (word, times) => {
   for (let i = 0; i < times; i++) {
